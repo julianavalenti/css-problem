@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+
+}
+.image-grid {
+    --num-cols: 4;
+    display: grid;
+    width: 100hv;
+    grid-template-columns: 4* 25%;
+    grid-template-rows: 4* 25%;
+    /* height: 100%; */
+    width: 100%;
+    place-items:var(--num-cols);
+    
+   
+}
+img {
+    width: 100px;
+    display:grid; 
+    grid-template-columns: 4* 1fr;
+    grid-template-rows: auto;
+
+}
+    
+
+#grid-item-1 {
+    display: grid;
+    
+    grid-row: -5;
+    grid-column: span 2;
+    
+  }
+
+#grid-item-2 {
+   display: grid;
+    grid-column: span 2;
+    
+  }
